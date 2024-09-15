@@ -1,0 +1,18 @@
+{
+  "name": "week-3.1---middlewares-and-global-catches",
+  "version": "1.0.0",
+  "description": "Middlewares and input validation",
+  "main": "Before_preChecked_Middlewares.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "\"100devs-chorot2.0"
+  },
+  "keywords": [
+    "javascript"
+  ],
+  "author": "sane-aalam",
+  "license": "ISC"
+}
