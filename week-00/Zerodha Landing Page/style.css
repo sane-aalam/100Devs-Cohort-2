@@ -1,0 +1,144 @@
+
+/* Pre-define classs for re-useable code */
+.marginMaintainer{
+    margin: 0px 176px;
+}
+
+:root {
+    --main-color: #387ED1;
+    --text-color: #666666;
+}
+  
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 176px;
+    padding: 18px 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+#logo{
+    width: 130px;
+    height: 17.8px;
+}
+
+ul{
+    width: 938px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+}
+
+ul li{
+    list-style-type: none;
+    padding: 0px 0px 0px 42px;
+}
+
+ul li a{
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+#main-img{
+    width: 1054px;
+    height: 443px;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.main-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.btn{
+    padding: 0.8rem 1.5rem;
+    background: var(--main-color);
+    font-size: 1.1rem;
+    font-weight: 500;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: 0.3s;
+    border: 0px;
+}
+.btn:hover{
+    background: #000000;
+    color: #fff;
+    font-weight: 500;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.section-same ul{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    width: 250px;
+    height: 300px;
+    color: var(--text-color);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+.section-same p{
+    color: var(--text-color);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+/* aside css */
+.asidesection{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.stock-class{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+}
+
+.stock-section-1 p:first-child{
+    color: var(--text-color);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 45px;
+}
+
+.stock-section-1 p:last-child{
+    color: var(--text-color);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:19px;
+}
+
+.stock-section-2 ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.stock-section-2 ul li{
+    list-style-type: circle;
+    padding: 23px;
+    color: var(--text-color);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    margin:8px;
+}
