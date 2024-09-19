@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button onclick="buttonClicked()">Click button</button>
+    <div id="root"></div>
+  </body>
+  <script>
+    function buttonClicked() {
+      console.log("button clicked!");
+      let container = document.createElement("div");
+      let heading1 = document.createElement("h1");
+      let heading2 = document.createElement("h2");
+      let heading3 = document.createElement("h3");
+      let heading4 = document.createElement("h4");
+      let heading5 = document.createElement("h5");
+      let heading6 = document.createElement("h6");
+
+      heading1.innerText = "This is heading 1";
+      heading2.innerText = "This is heading 2";
+      heading3.innerText = "This is heading 3";
+      heading4.innerText = "This is heading 4";
+      heading5.innerText = "This is heading 5";
+      heading6.innerText = "This is heading 6";
+      container.appendChild(heading1);
+      container.appendChild(heading2);
+      container.appendChild(heading3);
+      container.appendChild(heading4);
+      container.appendChild(heading5);
+      container.appendChild(heading6);
+
+      container.style.border = "5px solid black";
+      container.style.backgroundColor = "skyblue";
+
+      const rootContainer = document.getElementById("root");
+      rootContainer.appendChild(container);
+    }
+  </script>
+</html>

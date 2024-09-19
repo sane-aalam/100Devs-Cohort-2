@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM intro</title>
+    <style>
+      div {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 1090px;
+        border: 2px solid red;
+      }
+      .bg-color {
+        background-color: red;
+        width: 100px;
+        height: 100px;
+        border: 0px;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <button class="bg-color">Button 1</button>
+      <button class="bg-color">Button 2</button>
+      <button class="bg-color">Button 3</button>
+    </div>
+    <!-- DRY principle - don't repeat yourself! -->
+    <div>
+      <p style="background-color: red">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero,
+        provident!
+      </p>
+      <p style="background-color: red">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, molestiae
+        doloribus illum asperiores assumenda aperiam enim sunt dicta similique
+        odit maxime quaerat voluptatum, eveniet nam quo quos maiores sapiente
+        est!
+      </p>
+      <p style="background-color: red">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores aut,
+        fugiat nobis aliquam doloribus sequi quibusdam beatae illo quisquam
+        architecto amet laborum ex sint excepturi minus molestias labore
+        voluptatem vel.
+      </p>
+    </div>
+  </body>
+</html>

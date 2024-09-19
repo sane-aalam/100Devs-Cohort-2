@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input
+      type="text"
+      name="second-number"
+      id="first-number"
+      placeholder="First Number"
+    />
+    <br />
+    <br />
+    <input
+      type="text"
+      name="second-number"
+      id="second-number"
+      placeholder="second Number"
+    />
+    <button onclick="populateDiv()">Show Me Data</button>
+    <div id="finaldiv"></div>
+  </body>
+  <script>
+    function populateDiv() {
+      // select the firstNumber,secondNumber
+      // select the finalDiv
+      // show the data into the finalDiv (sum up both number firstNumber + secondNumber)
+      const FirstNumberStr = document.getElementById("first-number").value;
+      const SecondNumberStr = document.getElementById("second-number").value;
+      const finalDiv = document.getElementById("finaldiv");
+
+      // parseInt (convert into string to integer value)
+      const FirstNumberInteger = parseInt(FirstNumberStr);
+      const SecondNumberInteger = parseInt(SecondNumberStr);
+      finalDiv.innerText = FirstNumberInteger + SecondNumberInteger;
+      console.log(finalDiv);
+    }   
+
+    //--DOM API 
+    // document.getElementById
+    // document.getElementsByClassName
+    // document.getElementsByName
+    // document.getElementsByTagName
+    // document.getElementsByTagName
+    // document.getElementsByTagNameNS
+    // document.querySelector
+    // document.querySelectorAll
+    // appendChild()
+    // removeChild();
+    // appendChildFirst();
+  </script>
+</html>
