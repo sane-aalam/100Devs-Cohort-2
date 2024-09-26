@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script>
+    // Why Id
+    // EveryChild have unique key value 
+    // Easy to dom update,insert,delete[CURD]
+    // Easy to maintain into DOM
+    let globalId = 1;
+
+    function markAsDone(todoId) {
+      const parent = document.getElementById(todoId);
+    //   parent.children[0] = title 
+    // parent.children[1] = discription 
+    // parent.children[2] = button, which we want to make done!
+      parent.children[2].innerHTML = "Done!"
+    }
+
+    //* document.createElement = NewElement creation
+    //* parent div > (children have title,description,button)
+
+    function createChild(title, description, id) {
+      const child = document.createElement("div");
+      const firstGrandParent = document.createElement("div");
+      const secondGrandParent = document.createElement("div");
+      const thirdGrandParent = document.createElement("button");
+      firstGrandParent.innerHTML = title;
+      secondGrandParent.innerHTML = description;
+      thirdGrandParent.innerHTML = "Mark as done";
+      thirdGrandParent.setAttribute("onclick", `markAsDone(${id})`);
+      child.appendChild(firstGrandParent);
+      child.appendChild(secondGrandParent);
+      child.appendChild(thirdGrandParent)
+      // setAttribute(id,class,attribute using javascript)
+      child.setAttribute("id", id);
+      return child;
+    }
+    function addTodo() {
+      const title = document.getElementById("title").value;
+      const description = document.getElementById("description").value;
+      const parent = document.getElementById("todos");
+
+      parent.appendChild(createChild(title, description, globalId++));
+    }
+  </script>
+</head>
+
+<body>
+  <input type="text" id="title" placeholder="Todo title"></input> <br /><br />
+  <input type="text" id="description" placeholder="Todo description"></input> <br /><br />
+  <!-- one button is clicked then called functino addTodo(),which called! -->
+  <button onclick="addTodo()">Add todo</button>
+  <div id="todos">
+  </div>
+</body>
+
+</html>
